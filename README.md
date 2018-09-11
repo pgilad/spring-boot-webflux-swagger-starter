@@ -21,6 +21,8 @@ gradle bootRun
 Now open your favorite web-browser (Chrome) to `http://localhost:8080/swagger-ui.html` which is automatically
 generated from the `HelloController` web-flux mapping.
 
+![swagger-ui](./images/swagger-ui.png)
+
 ## License
 
 MIT
