@@ -1,4 +1,4 @@
-package com.example.springbootwebfluxswagger;
+package com.example.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

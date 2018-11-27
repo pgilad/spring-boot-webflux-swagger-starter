@@ -3,8 +3,7 @@
 
 ## Requirements
 
-- Java 10
-- Gradle 4.10
+- Java 11
 
 ## Installation
 

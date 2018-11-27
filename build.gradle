@@ -1,24 +1,24 @@
-buildscript {
-    ext {
-        springBootVersion = '2.0.4.RELEASE'
-    }
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.springframework.boot' version '2.1.0.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.6.RELEASE'
+    id 'com.github.ben-manes.versions' version '0.20.0'
 }
-
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 10
-targetCompatibility = 10
+
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
+
+springBoot {
+    mainClassName = 'com.example.swagger.Application'
+}
+
+wrapper {
+    distributionType = Wrapper.DistributionType.ALL
+}
 
 repositories {
     jcenter()
@@ -33,5 +33,5 @@ dependencies {
     compile 'io.springfox:springfox-spring-webflux:3.0.0-SNAPSHOT'
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
-    testCompile 'io.projectreactor:reactor-test'
+    testCompile 'io.projectreactor:reactor-test:3.2.3.RELEASE'
 }
