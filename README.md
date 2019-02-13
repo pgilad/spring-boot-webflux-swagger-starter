@@ -24,4 +24,4 @@ generated from the `HelloController` web-flux mapping.
 
 ## License
 
-MIT
+MIT © [Gilad Peleg](https://www.giladpeleg.com)
