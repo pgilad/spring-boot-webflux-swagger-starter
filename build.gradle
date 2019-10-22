@@ -1,9 +1,9 @@
 plugins {
     id 'java'
     id 'idea'
-    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'org.springframework.boot' version '2.2.0.RELEASE'
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
-    id 'com.github.ben-manes.versions' version '0.22.0'
+    id 'com.github.ben-manes.versions' version '0.27.0'
 }
 
 group = 'com.example'
@@ -34,5 +34,5 @@ dependencies {
     compile 'io.springfox:springfox-spring-webflux:3.0.0-SNAPSHOT'
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
-    testCompile 'io.projectreactor:reactor-test:3.2.11.RELEASE'
+    testCompile 'io.projectreactor:reactor-test:3.3.0.RELEASE'
 }
